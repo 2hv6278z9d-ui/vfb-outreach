@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veteran Family Benefits — Schedule Your Appointment</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%230A1628'/><text y='22' x='16' font-size='18' text-anchor='middle' fill='%23C9A84C'>★</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy:       #0D1F3C;
+      --navy-2:     #162d52;
+      --navy-3:     #1e3d6e;
+      --gold:       #C49A3C;
+      --gold-light: #E8BF6A;
+      --gold-bg:    rgba(196,154,60,0.08);
+      --cream:      #F7F6F2;
+      --white:      #FFFFFF;
+      --text:       #0D1F3C;
+      --text-2:     #4A5568;
+      --text-3:     #8A9BB5;
+      --border:     #E2E8F0;
+      --border-2:   #CBD5E0;
+      --success:    #1B7F4F;
+      --r:          8px;
+    }
+
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── LAYOUT ─────────────────────────── */
+    .layout {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* ══════════════════════════════════════
+       LEFT PANEL
+    ══════════════════════════════════════ */
+    .panel-left {
+      width: 44%;
+      background: var(--navy);
+      display: flex;
+      flex-direction: column;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+      scrollbar-width: none;
+    }
+    .panel-left::-webkit-scrollbar { display: none; }
+
+    /* Top bar */
+    .left-topbar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 24px 36px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .flag-badge {
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    .org-name {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    /* Left body */
+    .left-body {
+      padding: 32px 36px 32px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .left-body h1 {
+      font-size: 1.55rem;
+      font-weight: 800;
+      line-height: 1.15;
+      color: #fff;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+      white-space: nowrap;
+    }
+
+    .presenter-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+
+    .presenter-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--gold);
+      flex-shrink: 0;
+    }
+
+    .presenter-name {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-3);
+    }
+
+    /* Video */
+    .video-wrap {
+      width: 100%;
+      border-radius: var(--r);
+      overflow: hidden;
+      background: transparent;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .video-wrap iframe {
+      width: 100%;
+      aspect-ratio: 16/9;
+      display: block;
+      border: none;
+    }
+
+    /* Quick facts */
+    .quick-facts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .fact-chip {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: var(--r);
+      padding: 10px 12px;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      font-size: 12px;
+      font-weight: 500;
+      color: #A8BDD4;
+      transition: background 0.2s;
+    }
+
+    .fact-chip .chip-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      background: rgba(196,154,60,0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      flex-shrink: 0;
+    }
+
+    .fact-chip.full { grid-column: span 2; }
+
+    /* What you receive */
+    .receive-block {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: var(--r);
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .receive-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 13px 16px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .receive-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .receive-badge {
+      background: var(--gold-bg);
+      border: 1px solid rgba(196,154,60,0.3);
+      color: var(--gold-light);
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 20px;
+    }
+
+    .receive-list {
+      list-style: none;
+    }
+
+    .receive-list li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 11px 16px;
+      font-size: 13px;
+      font-weight: 500;
+      color: #C8D8E8;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .receive-list li:last-child { border-bottom: none; }
+
+    .receive-list li::before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--gold);
+      flex-shrink: 0;
+    }
+
+    /* Agent footer */
+    .agent-footer {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 18px 16px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: var(--r);
+    }
+
+    .agent-avi {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--navy-2);
+      border: 2px solid var(--gold);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 18px;
+      color: var(--gold);
+    }
+
+    .agent-avi img { width:100%; height:100%; object-fit:cover; }
+
+    .agent-info-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.2;
+    }
+
+    .agent-info-title {
+      font-size: 11px;
+      color: var(--text-3);
+      margin-top: 2px;
+    }
+
+    /* ══════════════════════════════════════
+       RIGHT PANEL
+    ══════════════════════════════════════ */
+    .panel-right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px 56px;
+      overflow-y: auto;
+    }
+
+    /* Progress */
+    .progress-track {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 36px;
+    }
+
+    .prog-step {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .prog-num {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 800;
+      transition: all 0.3s;
+    }
+
+    .prog-num.active {
+      background: var(--navy);
+      color: #fff;
+    }
+
+    .prog-num.done {
+      background: var(--success);
+      color: #fff;
+    }
+
+    .prog-num.inactive {
+      background: var(--border);
+      color: var(--text-2);
+    }
+
+    .prog-label {
+      color: var(--text-2);
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .prog-label.active { color: var(--navy); }
+
+    .prog-line {
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+      max-width: 40px;
+    }
+
+    /* Form */
+    .section-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--gold-bg);
+      border: 1px solid rgba(196,154,60,0.25);
+      color: var(--gold);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 5px 10px;
+      border-radius: 4px;
+      margin-bottom: 14px;
+    }
+
+    .form-title {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--navy);
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 8px;
+    }
+
+    .form-sub {
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--text-2);
+      margin-bottom: 28px;
+      line-height: 1.6;
+    }
+
+    /* Fields */
+    .field-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .field {
+      margin-bottom: 16px;
+    }
+
+    .field label {
+      display: block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--text-2);
+      margin-bottom: 7px;
+    }
+
+    .field label .req { color: #E53E3E; margin-left: 2px; }
+
+    .field input,
+    .field select {
+      width: 100%;
+      padding: 12px 14px;
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: var(--r);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text);
+      transition: border-color 0.2s, box-shadow 0.2s;
+      appearance: none;
+      -webkit-appearance: none;
+    }
+
+    .field input:focus,
+    .field select:focus {
+      outline: none;
+      border-color: var(--navy-2);
+      box-shadow: 0 0 0 3px rgba(13,31,60,0.1);
+    }
+
+    .field input::placeholder { color: #C0CADA; }
+
+    .select-wrap { position: relative; }
+    .select-wrap::after {
+      content: '';
+      position: absolute;
+      right: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0; height: 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 5px solid var(--text-3);
+      pointer-events: none;
+    }
+
+    /* CTA */
+    .btn-submit {
+      width: 100%;
+      padding: 15px;
+      background: var(--navy);
+      color: #fff;
+      border: none;
+      border-radius: var(--r);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+      cursor: pointer;
+      margin-top: 6px;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .btn-submit:hover {
+      background: var(--navy-2);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 24px rgba(13,31,60,0.22);
+    }
+
+    .btn-submit:disabled {
+      background: var(--border-2);
+      color: #999;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+
+    .btn-submit svg {
+      width: 16px; height: 16px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      transition: transform 0.2s;
+    }
+
+    .btn-submit:hover svg { transform: translateX(3px); }
+
+    .privacy-note {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      font-size: 11px;
+      color: var(--text-3);
+      margin-top: 12px;
+      font-weight: 500;
+    }
+
+    .lock-icon { font-size: 11px; }
+
+    /* Back button */
+    .btn-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: none;
+      border: none;
+      color: var(--text-3);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      padding: 0;
+      margin-bottom: 20px;
+      transition: color 0.15s;
+    }
+    .btn-back:hover { color: var(--navy); }
+
+    /* Spouse notice box */
+    .spouse-notice {
+      background: rgba(196,154,60,0.08);
+      border: 1px solid rgba(196,154,60,0.35);
+      border-radius: var(--r);
+      padding: 14px 16px;
+      margin-bottom: 22px;
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+    .spouse-notice-icon {
+      font-size: 16px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .spouse-notice p {
+      font-size: 13px;
+      color: #7a5c1e;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+    .spouse-notice p span {
+      font-weight: 700;
+    }
+
+    /* ── CALENDAR STEP ──────────────────── */
+    .cal-wrap {
+      display: none;
+      animation: fadeIn 0.4s ease both;
+    }
+
+    .cal-header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+
+    .cal-month-label {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--navy);
+      letter-spacing: -0.02em;
+    }
+
+    .cal-nav {
+      display: flex;
+      gap: 6px;
+    }
+
+    .cal-nav button {
+      width: 32px;
+      height: 32px;
+      border: 1.5px solid var(--border);
+      border-radius: 6px;
+      background: var(--white);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--navy);
+      font-size: 14px;
+      transition: background 0.15s, border-color 0.15s;
+    }
+
+    .cal-nav button:hover {
+      background: var(--navy);
+      color: #fff;
+      border-color: var(--navy);
+    }
+
+    .cal-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 4px;
+      margin-bottom: 20px;
+    }
+
+    .cal-day-name {
+      text-align: center;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--text-3);
+      padding: 6px 0;
+    }
+
+    .cal-day {
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+      border: 1.5px solid transparent;
+    }
+
+    .cal-day.empty { cursor: default; }
+    .cal-day.past  { color: #ccc; cursor: not-allowed; }
+    .cal-day.weekend { color: #ccc; cursor: not-allowed; }
+
+    .cal-day.available:hover {
+      background: var(--navy);
+      color: #fff;
+    }
+
+    .cal-day.selected {
+      background: var(--navy);
+      color: #fff;
+      border-color: var(--navy);
+    }
+
+    .cal-day.today {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    .cal-day.today.selected {
+      background: var(--navy);
+      color: #fff;
+    }
+
+    /* Time slots */
+    .slots-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--text-2);
+      margin-bottom: 10px;
+    }
+
+    .slots-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .time-slot {
+      padding: 10px 8px;
+      border: 1.5px solid var(--border);
+      border-radius: 6px;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-2);
+      cursor: pointer;
+      background: var(--white);
+      transition: all 0.15s;
+    }
+
+    .time-slot:hover {
+      border-color: var(--navy);
+      color: var(--navy);
+    }
+
+    .time-slot.selected {
+      background: var(--navy);
+      border-color: var(--navy);
+      color: #fff;
+    }
+
+    .btn-confirm {
+      width: 100%;
+      padding: 15px;
+      background: var(--gold);
+      color: var(--navy);
+      border: none;
+      border-radius: var(--r);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .btn-confirm:hover {
+      background: var(--gold-light);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(196,154,60,0.3);
+    }
+
+    .btn-confirm:disabled {
+      background: var(--border);
+      color: #aaa;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+
+    /* ── CONFIRMED STEP ─────────────────── */
+    .confirmed-wrap {
+      display: none;
+      text-align: center;
+      animation: fadeIn 0.4s ease both;
+    }
+
+    .confirmed-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: var(--navy);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 22px;
+      box-shadow: 0 8px 28px rgba(13,31,60,0.2);
+    }
+
+    .confirmed-icon svg {
+      width: 30px; height: 30px;
+      stroke: var(--gold-light);
+      fill: none;
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .confirmed-wrap h2 {
+      font-size: 1.9rem;
+      font-weight: 800;
+      color: var(--navy);
+      letter-spacing: -0.03em;
+      margin-bottom: 10px;
+    }
+
+    .confirmed-booking-box {
+      background: var(--gold-bg);
+      border: 1px solid rgba(196,154,60,0.25);
+      border-radius: var(--r);
+      padding: 18px 24px;
+      margin: 0 auto 20px;
+      max-width: 320px;
+    }
+
+    .confirmed-booking-box .booked-date {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--navy);
+    }
+
+    .confirmed-booking-box .booked-time {
+      font-size: 14px;
+      color: var(--text-2);
+      margin-top: 4px;
+      font-weight: 600;
+    }
+
+    .confirmed-wrap p {
+      font-size: 14px;
+      color: var(--text-2);
+      line-height: 1.7;
+      max-width: 360px;
+      margin: 0 auto;
+    }
+
+    /* ── ANIMATIONS ─────────────────────── */
+    @keyframes fadeIn {
+      from { opacity:0; transform: translateY(8px); }
+      to   { opacity:1; transform: translateY(0); }
+    }
+
+    .panel-left > * { animation: fadeIn 0.5s ease both; }
+    .panel-left .left-topbar { animation-delay: 0s; }
+    .panel-left .left-body   { animation-delay: 0.08s; }
+
+    /* ── MOBILE ─────────────────────────── */
+    @media (max-width: 900px) {
+      .layout { flex-direction: column; min-height: unset; }
+      .panel-left { width:100%; position:relative; height:auto; overflow-y: visible; }
+      .video-wrap iframe { aspect-ratio: 16/9; }
+      .panel-right {
+        padding: 36px 24px 56px;
+        overflow-y: visible;
+        justify-content: flex-start;
+        min-height: unset;
+      }
+      .field-row { grid-template-columns: 1fr; gap: 0; }
+      .quick-facts { grid-template-columns: 1fr; }
+      .fact-chip.full { grid-column: span 1; }
+      .form-title { font-size: 1.6rem; }
+      .slots-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- ══════════════════════════ LEFT ══ -->
+  <aside class="panel-left">
+
+    <div class="left-topbar">
+      <span class="flag-badge">🇺🇸</span>
+      <span class="org-name">Veteran Service Organizations</span>
+    </div>
+
+    <div class="left-body">
+
+      <h1>Veteran Family Benefits</h1>
+
+      <div class="presenter-row">
+        <div class="presenter-dot"></div>
+        <span class="presenter-name">Regina Gumma &nbsp;·&nbsp; Veteran Benefits Specialist</span>
+      </div>
+
+      <div class="video-wrap">
+        <iframe src="https://drive.google.com/file/d/1goIryGTSK3dhUr57GeolWGYzm167XIUT/preview" allow="autoplay" allowfullscreen></iframe>
+      </div>
+
+      <div class="quick-facts">
+        <div class="fact-chip">
+          <div class="chip-icon">💻</div>
+          Virtual call
+        </div>
+        <div class="fact-chip">
+          <div class="chip-icon">📅</div>
+          Your schedule
+        </div>
+        <div class="fact-chip full">
+          <div class="chip-icon">★</div>
+          No-Cost Benefits — at no cost to you
+        </div>
+      </div>
+
+      <div class="receive-block">
+        <div class="receive-header">
+          <span class="receive-label">What You Receive</span>
+          <span class="receive-badge">6 Benefits</span>
+        </div>
+        <ul class="receive-list">
+          <li>AD&amp;D Certificate</li>
+          <li>No-Cost Legal Will &amp; Testament Kit</li>
+          <li>Family Information &amp; Burial Guide</li>
+          <li>AIL+ Health Discount Card</li>
+          <li>VA Burial Benefits Review</li>
+          <li>Estate &amp; Final Expense Planning Guidance</li>
+        </ul>
+      </div>
+
+      <div class="agent-footer">
+        <div class="agent-avi">
+          <img src="regina.png" alt="Regina Gumma" onerror="this.style.display='none';this.parentElement.textContent='R'">
+        </div>
+        <div>
+          <div class="agent-info-name">Regina Gumma</div>
+          <div class="agent-info-title">Veteran Benefits Specialist &nbsp;·&nbsp; Globe Life–AO</div>
+        </div>
+      </div>
+
+    </div>
+  </aside>
+
+  <!-- ══════════════════════════ RIGHT ══ -->
+  <main class="panel-right">
+
+    <!-- Progress -->
+    <div class="progress-track">
+      <div class="prog-step">
+        <div class="prog-num active" id="step-num-1">1</div>
+        <span class="prog-label active" id="step-lbl-1">Your Info</span>
+      </div>
+      <div class="prog-line"></div>
+      <div class="prog-step">
+        <div class="prog-num inactive" id="step-num-2">2</div>
+        <span class="prog-label" id="step-lbl-2">Schedule</span>
+      </div>
+    </div>
+
+    <!-- Step 1 — Form -->
+    <div id="form-wrap" style="animation: fadeIn 0.5s ease both;">
+      <div class="section-tag">No-Cost Benefits Enrollment</div>
+      <h2 class="form-title">Your Information</h2>
+      <p class="form-sub">Please confirm your information below so we can prepare for your benefits consultation.</p>
+
+      <form id="lead-form" onsubmit="handleSubmit(event)" novalidate>
+
+        <div class="field-row">
+          <div class="field">
+            <label>First Name<span class="req">*</span></label>
+            <input type="text" name="first_name" required placeholder="John" autocomplete="given-name">
+          </div>
+          <div class="field">
+            <label>Last Name<span class="req">*</span></label>
+            <input type="text" name="last_name" required placeholder="Smith" autocomplete="family-name">
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Email Address<span class="req">*</span></label>
+          <input type="email" name="email" required placeholder="john.smith@email.com" autocomplete="email">
+        </div>
+
+        <div class="field">
+          <label>Phone Number<span class="req">*</span></label>
+          <input type="tel" name="phone" required placeholder="(555) 123-4567" autocomplete="tel" id="phone-input">
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label>Branch of Service</label>
+            <div class="select-wrap">
+              <select name="branch">
+                <option value="">Select...</option>
+                <option>Army</option>
+                <option>Navy</option>
+                <option>Air Force</option>
+                <option>Marines</option>
+                <option>Coast Guard</option>
+                <option>Space Force</option>
+                <option>National Guard</option>
+                <option>Spouse / Family Member</option>
+                <option>Civilian</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label>State</label>
+            <div class="select-wrap">
+              <select name="state">
+                <option value="">Select...</option>
+                <option>Alabama</option><option>Alaska</option><option>Arizona</option>
+                <option>Arkansas</option><option>California</option><option>Colorado</option>
+                <option>Connecticut</option><option>Delaware</option><option>Florida</option>
+                <option>Georgia</option><option>Hawaii</option><option>Idaho</option>
+                <option>Illinois</option><option>Indiana</option><option>Iowa</option>
+                <option>Kansas</option><option>Kentucky</option><option>Louisiana</option>
+                <option>Maine</option><option>Maryland</option><option>Massachusetts</option>
+                <option>Michigan</option><option>Minnesota</option><option>Mississippi</option>
+                <option>Missouri</option><option>Montana</option><option>Nebraska</option>
+                <option>Nevada</option><option>New Hampshire</option><option>New Jersey</option>
+                <option>New Mexico</option><option>New York</option><option>North Carolina</option>
+                <option>North Dakota</option><option>Ohio</option><option>Oklahoma</option>
+                <option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option>
+                <option>South Carolina</option><option>South Dakota</option><option>Tennessee</option>
+                <option>Texas</option><option>Utah</option><option>Vermont</option>
+                <option>Virginia</option><option>Washington</option><option>Washington D.C.</option>
+                <option>West Virginia</option><option>Wisconsin</option><option>Wyoming</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-submit" id="submit-btn">
+          Continue to Schedule
+          <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </button>
+        <p class="privacy-note">
+          <span class="lock-icon">🔒</span>
+          Your information is private and only used to prepare for your benefits call.
+        </p>
+
+      </form>
+    </div>
+
+    <!-- Step 2 — Embedded Calendar -->
+    <div class="cal-wrap" id="cal-wrap">
+      <button class="btn-back" onclick="goBackToForm()">&#8592; Edit Information</button>
+      <div class="section-tag">Step 2 of 2 — Pick a Time</div>
+      <h2 class="form-title">Select a Time</h2>
+      <p class="form-sub">Choose a date and time for your benefits consultation. Regina will review everything with you on the call.</p>
+
+      <div class="spouse-notice">
+        <span class="spouse-notice-icon">⚠️</span>
+        <p><span>Heads up:</span> If you have a spouse or partner, we encourage them to join the call. Please choose a time that works for both of you if possible.</p>
+      </div>
+
+      <div class="field" style="margin-bottom: 24px;">
+        <label>Spouse / Partner's Full Name <span style="font-size:11px;color:var(--text-3);font-weight:500;">(if applicable)</span></label>
+        <input type="text" id="spouse-name" placeholder="Jane Smith" autocomplete="name">
+      </div>
+
+      <div class="cal-header-row">
+        <div class="cal-month-label" id="cal-month-label"></div>
+        <div class="cal-nav">
+          <button onclick="changeMonth(-1)">&#8592;</button>
+          <button onclick="changeMonth(1)">&#8594;</button>
+        </div>
+      </div>
+
+      <div class="cal-grid" id="cal-grid"></div>
+
+      <div id="slots-section" style="display:none">
+        <div class="slots-label" id="slots-label"></div>
+        <div class="slots-grid" id="slots-grid"></div>
+      </div>
+
+      <button class="btn-confirm" id="btn-confirm" disabled onclick="confirmBooking()">
+        Confirm Appointment
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      </button>
+    </div>
+
+    <!-- Step 3 — Confirmed -->
+    <div class="confirmed-wrap" id="confirmed-wrap">
+      <div class="confirmed-icon">
+        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <h2>You're All Set!</h2>
+      <div class="confirmed-booking-box">
+        <div class="booked-date" id="confirmed-date"></div>
+        <div class="booked-time" id="confirmed-time"></div>
+      </div>
+      <p>Your appointment has been confirmed. Regina will reach out to you at the number you provided. We look forward to speaking with you.</p>
+    </div>
+
+  </main>
+
+</div>
+
+<script>
+  // ── State ──────────────────────────────────
+  let leadData = null;
+  let selectedDate = null;
+  let selectedTime = null;
+  let currentYear = new Date().getFullYear();
+  let currentMonth = new Date().getMonth();
+  let leadAlreadySubmitted = false;
+
+  const TIME_SLOTS = [
+    '9:00 AM','9:30 AM','10:00 AM','10:30 AM',
+    '11:00 AM','11:30 AM','12:00 PM','12:30 PM',
+    '1:00 PM','1:30 PM','2:00 PM','2:30 PM',
+    '3:00 PM','3:30 PM','4:00 PM','4:30 PM',
+  ];
+
+  const MONTHS = ['January','February','March','April','May','June',
+                  'July','August','September','October','November','December'];
+  const DAYS   = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+
+  // ── Auto-fill from URL params ───────────────
+  (function prefillForm() {
+    const p = new URLSearchParams(window.location.search);
+    const form = document.getElementById('lead-form');
+    if (!form) return;
+    const map = { first: 'first_name', last: 'last_name', email: 'email', phone: 'phone', branch: 'branch', state: 'state' };
+    let anyFilled = false;
+    for (const [param, name] of Object.entries(map)) {
+      const val = p.get(param);
+      if (!val) continue;
+      const el = form.querySelector(`[name="${name}"]`);
+      if (!el) continue;
+      el.value = val;
+      // Format phone if pre-filled
+      if (name === 'phone') {
+        let v = val.replace(/\D/,'').slice(0,10);
+        if (v.length >= 6)      el.value = `(${v.slice(0,3)}) ${v.slice(3,6)}-${v.slice(6)}`;
+        else if (v.length >= 3) el.value = `(${v.slice(0,3)}) ${v.slice(3)}`;
+      }
+      anyFilled = true;
+    }
+    // If all key fields are filled, update subtitle
+    if (anyFilled) {
+      const sub = document.querySelector('.form-sub');
+      if (sub) sub.textContent = "We've pre-filled your information. Just confirm and choose a time that works for you.";
+    }
+  })();
+
+  // ── Phone formatting ───────────────────────
+  document.getElementById('phone-input').addEventListener('input', function() {
+    let v = this.value.replace(/\D/g,'').slice(0,10);
+    if (v.length >= 6)      this.value = `(${v.slice(0,3)}) ${v.slice(3,6)}-${v.slice(6)}`;
+    else if (v.length >= 3) this.value = `(${v.slice(0,3)}) ${v.slice(3)}`;
+    else                    this.value = v;
+  });
+
+  // ── Form submit → show calendar ────────────
+  async function handleSubmit(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submit-btn');
+    btn.disabled = true;
+    btn.innerHTML = 'Submitting&hellip;';
+
+    leadData = Object.fromEntries(new FormData(document.getElementById('lead-form')));
+    leadData.submitted_at = new Date().toISOString();
+
+    if (!leadAlreadySubmitted) {
+      try {
+        await fetch('/api/lead', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(leadData),
+        });
+        leadAlreadySubmitted = true;
+      } catch {
+        const arr = JSON.parse(localStorage.getItem('vfb_leads') || '[]');
+        arr.push(leadData);
+        localStorage.setItem('vfb_leads', JSON.stringify(arr));
+        leadAlreadySubmitted = true;
+      }
+    }
+
+    setTimeout(() => {
+      showCalendarStep();
+      renderCalendar();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 300);
+  }
+
+  function showCalendarStep() {
+    document.getElementById('form-wrap').style.display = 'none';
+    document.getElementById('cal-wrap').style.display = 'block';
+    document.getElementById('step-num-1').className = 'prog-num done';
+    document.getElementById('step-num-1').innerHTML = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>`;
+    document.getElementById('step-lbl-1').className = 'prog-label';
+    document.getElementById('step-num-2').className = 'prog-num active';
+    document.getElementById('step-lbl-2').className = 'prog-label active';
+  }
+
+  function goBackToForm() {
+    document.getElementById('cal-wrap').style.display = 'none';
+    document.getElementById('form-wrap').style.display = 'block';
+    const btn = document.getElementById('submit-btn');
+    btn.disabled = false;
+    btn.innerHTML = 'Continue to Schedule <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>';
+    document.getElementById('step-num-1').className = 'prog-num active';
+    document.getElementById('step-num-1').textContent = '1';
+    document.getElementById('step-lbl-1').className = 'prog-label active';
+    document.getElementById('step-num-2').className = 'prog-num inactive';
+    document.getElementById('step-lbl-2').className = 'prog-label';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // ── Calendar rendering ─────────────────────
+  function renderCalendar() {
+    const label = document.getElementById('cal-month-label');
+    const grid  = document.getElementById('cal-grid');
+    label.textContent = `${MONTHS[currentMonth]} ${currentYear}`;
+    grid.innerHTML = '';
+
+    // Day name headers
+    DAYS.forEach(d => {
+      const el = document.createElement('div');
+      el.className = 'cal-day-name';
+      el.textContent = d;
+      grid.appendChild(el);
+    });
+
+    const today     = new Date();
+    today.setHours(0,0,0,0);
+    const firstDay  = new Date(currentYear, currentMonth, 1).getDay();
+    const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+
+    // Empty cells before first day
+    for (let i = 0; i < firstDay; i++) {
+      const el = document.createElement('div');
+      el.className = 'cal-day empty';
+      grid.appendChild(el);
+    }
+
+    for (let d = 1; d <= daysInMonth; d++) {
+      const el   = document.createElement('div');
+      const date = new Date(currentYear, currentMonth, d);
+      const dow  = date.getDay();
+      const isToday = date.getTime() === today.getTime();
+      const isPast  = date < today;
+      const isWeekend = dow === 0 || dow === 6;
+
+      let cls = 'cal-day';
+      if (isPast || isWeekend) cls += isPast ? ' past' : ' weekend';
+      else cls += ' available';
+      if (isToday) cls += ' today';
+
+      const dateStr = date.toLocaleDateString('en-US', { weekday:'long', month:'long', day:'numeric', year:'numeric' });
+      if (selectedDate === dateStr) cls += ' selected';
+
+      el.className = cls;
+      el.textContent = d;
+
+      if (!isPast && !isWeekend) {
+        el.onclick = () => selectDate(dateStr, el);
+      }
+
+      grid.appendChild(el);
+    }
+  }
+
+  function changeMonth(dir) {
+    currentMonth += dir;
+    if (currentMonth > 11) { currentMonth = 0; currentYear++; }
+    if (currentMonth < 0)  { currentMonth = 11; currentYear--; }
+    selectedDate = null;
+    selectedTime = null;
+    document.getElementById('slots-section').style.display = 'none';
+    document.getElementById('btn-confirm').disabled = true;
+    renderCalendar();
+  }
+
+  function selectDate(dateStr, el) {
+    selectedDate = dateStr;
+    selectedTime = null;
+
+    document.querySelectorAll('.cal-day.selected').forEach(d => d.classList.remove('selected'));
+    el.classList.add('selected');
+
+    const label = document.getElementById('slots-label');
+    label.textContent = dateStr;
+
+    const grid = document.getElementById('slots-grid');
+    grid.innerHTML = '';
+    TIME_SLOTS.forEach(t => {
+      const el = document.createElement('div');
+      el.className = 'time-slot';
+      el.textContent = t;
+      el.onclick = () => selectTime(t, el);
+      grid.appendChild(el);
+    });
+
+    document.getElementById('slots-section').style.display = 'block';
+    document.getElementById('btn-confirm').disabled = true;
+  }
+
+  function selectTime(time, el) {
+    selectedTime = time;
+    document.querySelectorAll('.time-slot.selected').forEach(s => s.classList.remove('selected'));
+    el.classList.add('selected');
+    document.getElementById('btn-confirm').disabled = false;
+  }
+
+  // ── Confirm booking → email Regina ─────────
+  async function confirmBooking() {
+    const btn = document.getElementById('btn-confirm');
+    btn.disabled = true;
+    btn.textContent = 'Confirming…';
+
+    const spouseName = (document.getElementById('spouse-name').value || '').trim();
+    if (leadData) leadData.spouse_name = spouseName;
+
+    try {
+      await fetch('/api/book', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ lead: leadData, date: selectedDate, time: selectedTime }),
+      });
+    } catch {
+      // still show confirmed even if offline
+    }
+
+    document.getElementById('cal-wrap').style.display = 'none';
+    document.getElementById('confirmed-wrap').style.display = 'block';
+    document.getElementById('confirmed-date').textContent = selectedDate;
+    document.getElementById('confirmed-time').textContent = selectedTime;
+
+    document.getElementById('step-num-2').className = 'prog-num done';
+    document.getElementById('step-num-2').innerHTML = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>`;
+    document.getElementById('step-lbl-2').className = 'prog-label';
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>

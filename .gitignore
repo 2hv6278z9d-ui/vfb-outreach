@@ -1,0 +1,7 @@
+.env
+node_modules/
+data/
+logs/
+*.log
+leads.csv
+landing/video.mp4

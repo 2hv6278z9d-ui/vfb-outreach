@@ -1,0 +1,20 @@
+{
+  "name": "cold-email-outreach",
+  "version": "1.0.0",
+  "description": "Cold email outreach system for veteran family benefits",
+  "main": "send.js",
+  "scripts": {
+    "start": "node server.js",
+    "send": "node send.js",
+    "landing": "node server.js",
+    "export": "node export-leads.js"
+  },
+  "dependencies": {
+    "csv-parse": "^5.5.0",
+    "csv-stringify": "^6.7.0",
+    "dotenv": "^16.3.0",
+    "express": "^4.22.1",
+    "nodemailer": "^6.9.0"
+  },
+  "type": "module"
+}
