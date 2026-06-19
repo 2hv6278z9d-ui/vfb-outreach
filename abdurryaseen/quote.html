@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get a Quote | Abdur-Rahmaan Yaseen</title>
+  <meta name="description" content="Get a free insurance quote from Abdur-Rahmaan Yaseen — life and health coverage for families and individuals.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Abdur-Rahmaan <em>Yaseen</em></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html#story">About</a>
+        <a href="index.html#paths">Services</a>
+        <a href="index.html#opportunity">Opportunity</a>
+        <a href="quote.html" class="nav-cta-ghost active">Get a Quote</a>
+        <a href="apply.html" class="nav-cta">Join the Team</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-split">
+        <div class="page-hero-text">
+          <span class="label-tag reveal">Insurance Coverage</span>
+          <h1 class="page-hero-title reveal">Get your free <em>quote.</em></h1>
+          <p class="page-hero-sub reveal">Fill out the form and I'll reach out personally to find the right coverage for you and your family. No cost, no pressure — just honest guidance.</p>
+          <div class="quote-trust reveal">
+            <div class="trust-item">
+              <span class="trust-check">✓</span>
+              <span>100% free, no obligation</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-check">✓</span>
+              <span>Meet virtually via Zoom</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-check">✓</span>
+              <span>Life & health coverage options</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-check">✓</span>
+              <span>Union & association members welcome</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE FORM -->
+  <section class="section">
+    <div class="container">
+      <div class="apply-form-wrapper reveal">
+        <form class="apply-form" id="quoteForm">
+          <input type="hidden" name="form_type" value="Quote Request">
+
+          <!-- Name -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name <span class="req">*</span></label>
+              <input type="text" id="firstName" name="first_name" placeholder="First name" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name <span class="req">*</span></label>
+              <input type="text" id="lastName" name="last_name" placeholder="Last name" required>
+            </div>
+          </div>
+
+          <!-- Contact -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="quoteEmail">Email <span class="req">*</span></label>
+              <input type="email" id="quoteEmail" name="email" placeholder="you@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="quotePhone">Phone Number <span class="req">*</span></label>
+              <input type="tel" id="quotePhone" name="phone" placeholder="(555) 123-4567" required>
+            </div>
+          </div>
+
+          <!-- State -->
+          <div class="form-group">
+            <label for="quoteState">State of Residence <span class="req">*</span></label>
+            <select id="quoteState" name="state" required>
+              <option value="" disabled selected>Select your state</option>
+              <option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option>
+              <option>California</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option>
+              <option>Florida</option><option>Georgia</option><option>Hawaii</option><option>Idaho</option>
+              <option>Illinois</option><option>Indiana</option><option>Iowa</option><option>Kansas</option>
+              <option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option>
+              <option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option>
+              <option>Missouri</option><option>Montana</option><option>Nebraska</option><option>Nevada</option>
+              <option>New Hampshire</option><option>New Jersey</option><option>New Mexico</option><option>New York</option>
+              <option>North Carolina</option><option>North Dakota</option><option>Ohio</option><option>Oklahoma</option>
+              <option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option>
+              <option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option>
+              <option>Vermont</option><option>Virginia</option><option>Washington</option><option>West Virginia</option>
+              <option>Wisconsin</option><option>Wyoming</option>
+            </select>
+          </div>
+
+          <!-- Coverage Type -->
+          <div class="form-group">
+            <label>What type of coverage are you interested in? <span class="req">*</span></label>
+            <div class="radio-group">
+              <label class="radio-option">
+                <input type="radio" name="coverage_type" value="Life Insurance" required>
+                <span class="radio-mark"></span>
+                Life Insurance
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="coverage_type" value="Supplemental Health">
+                <span class="radio-mark"></span>
+                Supplemental Health Coverage
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="coverage_type" value="Both">
+                <span class="radio-mark"></span>
+                Both Life & Health
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="coverage_type" value="Not Sure">
+                <span class="radio-mark"></span>
+                Not sure — I'd like guidance
+              </label>
+            </div>
+          </div>
+
+          <!-- Union Member -->
+          <div class="form-group">
+            <label>Are you a member of a union or association? <span class="req">*</span></label>
+            <div class="radio-group">
+              <label class="radio-option">
+                <input type="radio" name="union_member" value="yes" required>
+                <span class="radio-mark"></span>
+                Yes
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="union_member" value="no">
+                <span class="radio-mark"></span>
+                No
+              </label>
+            </div>
+          </div>
+
+          <!-- Best Time -->
+          <div class="form-group">
+            <label for="bestTime">Best time to reach you</label>
+            <select id="bestTime" name="best_time">
+              <option value="" disabled selected>Select a time window</option>
+              <option>Morning (9am – 12pm)</option>
+              <option>Afternoon (12pm – 4pm)</option>
+              <option>Evening (4pm – 8pm)</option>
+              <option>Anytime</option>
+            </select>
+          </div>
+
+          <!-- Message -->
+          <div class="form-group">
+            <label for="quoteMessage">Anything you'd like me to know? (optional)</label>
+            <textarea id="quoteMessage" name="message" rows="4" placeholder="Tell me about your situation or any specific coverage questions..."></textarea>
+          </div>
+
+          <!-- Submit -->
+          <div class="form-submit">
+            <button type="submit" class="btn btn-dark btn-lg">Request My Free Quote</button>
+            <p class="form-disclaimer">By submitting, you agree to be contacted by Abdur-Rahmaan Yaseen regarding insurance coverage options. Your information will never be sold or shared.</p>
+          </div>
+        </form>
+
+        <div class="form-success" id="formSuccess" style="display:none;">
+          <div class="success-icon">✓</div>
+          <h2>Quote Request Received</h2>
+          <p>Thank you! I'll reach out personally within 24 hours to discuss your coverage options.</p>
+          <a href="index.html" class="btn btn-ghost">Back to Home</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <a href="index.html" class="nav-logo">Abdur-Rahmaan <em>Yaseen</em></a>
+          <p class="footer-legal">Co Executive Producer · AO Heritage. Independent agent affiliated with American Income Life Insurance Company and Globe Life Inc. Products and availability may vary by state.</p>
+        </div>
+        <div class="footer-right">
+          <div class="footer-links">
+            <a href="index.html#story">About</a>
+            <a href="index.html#paths">Services</a>
+            <a href="quote.html">Get a Quote</a>
+            <a href="apply.html">Join the Team</a>
+          </div>
+          <p class="footer-copy">&copy; 2026 Abdur-Rahmaan Yaseen. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    var APPS_SCRIPT_URL = 'YOUR_APPS_SCRIPT_URL_HERE';
+
+    document.getElementById('quoteForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      var btn = this.querySelector('button[type="submit"]');
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+
+      try {
+        var data = new URLSearchParams(new FormData(this));
+        var res = await fetch(APPS_SCRIPT_URL, { method: 'POST', body: data });
+        var json = await res.json();
+        if (json.status === 'success') {
+          document.getElementById('quoteForm').style.display = 'none';
+          document.getElementById('formSuccess').style.display = 'flex';
+        } else {
+          throw new Error(json.message || 'Submission failed');
+        }
+      } catch(err) {
+        btn.textContent = 'Request My Free Quote';
+        btn.disabled = false;
+        alert('Something went wrong. Please try again.');
+      }
+    });
+  </script>
+</body>
+</html>
