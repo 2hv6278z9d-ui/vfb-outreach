@@ -127,11 +127,10 @@ em { font-family: 'DM Serif Display', serif; font-style: italic; }
   position: absolute; right: 0; top: 0; bottom: 0; width: 50%;
   overflow: hidden;
 }
-.hero-photo-side img { width: 100%; height: 100%; object-fit: cover; object-position: center top; opacity: 0.9; }
+.hero-photo-side img { width: 70%; max-width: 480px; height: auto; object-fit: contain; opacity: 1; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 .hero-photo-side::after {
   content: ''; position: absolute; inset: 0;
-  background: linear-gradient(to right, var(--white) 0%, rgba(255,255,255,0.6) 50%, transparent 100%),
-              linear-gradient(to top, var(--white) 0%, transparent 30%);
+  background: linear-gradient(to right, var(--white) 0%, rgba(255,255,255,0.2) 30%, transparent 55%);
 }
 .hero-photo-placeholder {
   position: absolute; right: 0; top: 0; bottom: 0; width: 50%;
