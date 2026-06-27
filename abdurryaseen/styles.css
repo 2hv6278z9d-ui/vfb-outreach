@@ -23,7 +23,7 @@
 /* ─── RESET ─────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
-body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--white); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+body { font-family: 'Inter', sans-serif; color: var(--text); background-color: #fdfaf5; line-height: 1.6; -webkit-font-smoothing: antialiased; }
 img { max-width: 100%; display: block; }
 a { text-decoration: none; color: inherit; }
 em { font-family: 'DM Serif Display', serif; font-style: italic; }
@@ -31,7 +31,7 @@ em { font-family: 'DM Serif Display', serif; font-style: italic; }
 /* ─── LAYOUT ────────────────────────────────────────────── */
 .container { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
 .section    { padding: 96px 0; }
-.section-alt { background: var(--off-white); }
+.section-alt { background: #f5f0e8; }
 
 /* ─── BUTTONS ───────────────────────────────────────────── */
 .btn {
@@ -72,8 +72,10 @@ em { font-family: 'DM Serif Display', serif; font-style: italic; }
 /* ─── NAVBAR ────────────────────────────────────────────── */
 .navbar {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  background: var(--white);
-  border-bottom: 1px solid var(--gray-200);
+  background: rgba(253,250,245,0.97);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(201,168,76,0.18);
   transition: box-shadow var(--transition);
 }
 .navbar.scrolled { box-shadow: 0 2px 20px rgba(13,30,60,0.1); }
@@ -114,14 +116,15 @@ em { font-family: 'DM Serif Display', serif; font-style: italic; }
 .hero {
   position: relative; min-height: 100vh;
   display: flex; align-items: center;
-  background: var(--white); overflow: hidden;
+  background: #fdfaf5; overflow: hidden;
   padding-top: 68px;
 }
 .hero-bg-gradient {
   position: absolute; inset: 0;
   background:
-    radial-gradient(ellipse 60% 70% at 75% 50%, rgba(201,168,76,0.06) 0%, transparent 70%),
-    radial-gradient(ellipse 40% 50% at 5% 85%, rgba(238,241,246,0.6) 0%, transparent 55%);
+    radial-gradient(ellipse 70% 80% at 80% 25%, rgba(201,168,76,0.14) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 60% at 10% 90%, rgba(13,30,60,0.05) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 40% at 50% 50%, rgba(201,168,76,0.04) 0%, transparent 70%);
 }
 .hero-photo-side {
   position: absolute; right: 0; top: 0; bottom: 0; width: 50%;
