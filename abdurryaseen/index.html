@@ -140,84 +140,109 @@
         <p class="section-sub">Permanent, portable benefits that stay with you — whether you change jobs, retire, or get laid off. Your coverage never expires.</p>
       </div>
 
-      <!-- Life Insurance -->
-      <div class="product-category reveal">
-        <div class="product-cat-header">
-          <div class="product-cat-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-          </div>
-          <div>
-            <h3>Life Insurance</h3>
-            <p>Term and whole life solutions designed with your family in mind.</p>
-          </div>
-          <a href="#contact" class="btn btn-gold btn-sm">Get in Touch →</a>
+      <!-- Tab Nav -->
+      <div class="product-tabs reveal">
+        <button class="product-tab active" data-tab="life">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          Life Insurance
+        </button>
+        <button class="product-tab" data-tab="health">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Supplemental Health
+        </button>
+        <button class="product-tab" data-tab="union">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+          Union &amp; Veteran
+        </button>
+      </div>
+
+      <!-- Life Panel -->
+      <div class="product-panel active" id="tab-life">
+        <div class="product-panel-intro">
+          <p>Term and whole life solutions designed with your family in mind. Permanent, portable coverage that never lapses.</p>
+          <a href="#contact" class="btn btn-gold btn-sm">See If I Qualify →</a>
         </div>
-        <div class="product-sub-grid">
-          <div class="product-sub-card">
+        <div class="product-card-grid">
+          <div class="product-card">
+            <div class="product-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
             <h4>Term Life Insurance</h4>
-            <p>Coverage for a specific period of time — affordable protection when your family needs it most.</p>
+            <p>Affordable coverage for a specific period — protection for your family when they need it most.</p>
           </div>
-          <div class="product-sub-card">
+          <div class="product-card">
+            <div class="product-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
             <h4>Whole Life Insurance</h4>
             <p>Permanent coverage that never lapses, with premiums locked in at issue and cash value that grows over time.</p>
           </div>
-          <div class="product-sub-card">
+          <div class="product-card">
+            <div class="product-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
             <h4>Children's Life Insurance</h4>
-            <p>Lock in affordable coverage for your child today. Rates are guaranteed and coverage follows them into adulthood.</p>
+            <p>Lock in affordable coverage for your child today. Rates are guaranteed and follow them into adulthood.</p>
           </div>
         </div>
       </div>
 
-      <!-- Supplemental Health -->
-      <div class="product-category reveal">
-        <div class="product-cat-header">
-          <div class="product-cat-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
-          <div>
-            <h3>Supplemental Health</h3>
-            <p>Accident, critical illness, and cancer insurance for around-the-clock protection.</p>
-          </div>
-          <a href="#contact" class="btn btn-outline-navy btn-sm">Get in Touch →</a>
+      <!-- Health Panel -->
+      <div class="product-panel" id="tab-health">
+        <div class="product-panel-intro">
+          <p>Accident, critical illness, and cancer insurance. Cash benefits paid directly to you — not the hospital.</p>
+          <a href="#contact" class="btn btn-gold btn-sm">See If I Qualify →</a>
         </div>
-        <div class="product-sub-grid">
-          <div class="product-sub-card">
+        <div class="product-card-grid">
+          <div class="product-card">
+            <div class="product-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
             <h4>Cancer Protection</h4>
-            <p>Cash benefits paid directly to you — not the hospital — so you can focus on recovery, not bills.</p>
+            <p>Cash benefits paid directly to you so you can focus on recovery, not bills. Covers treatments, travel, and more.</p>
           </div>
-          <div class="product-sub-card">
+          <div class="product-card">
+            <div class="product-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
             <h4>Critical Illness</h4>
             <p>A lump-sum benefit paid upon diagnosis of a covered illness like a heart attack or stroke.</p>
           </div>
-          <div class="product-sub-card">
+          <div class="product-card">
+            <div class="product-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
             <h4>Accidental Death &amp; Dismemberment</h4>
             <p>Financial protection for your family in the event of a covered accident or accidental death.</p>
           </div>
         </div>
       </div>
 
-      <!-- Union & Veteran Benefits -->
-      <div class="product-category reveal">
-        <div class="product-cat-header">
-          <div class="product-cat-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
-          </div>
-          <div>
-            <h3>Union, Association &amp; Veteran Benefits</h3>
-            <p>Exclusive portable benefits for members of 45,000+ unions, associations, and veteran service organizations.</p>
-          </div>
-          <a href="#contact" class="btn btn-outline-navy btn-sm">Get in Touch →</a>
+      <!-- Union Panel -->
+      <div class="product-panel" id="tab-union">
+        <div class="product-panel-intro">
+          <p>Exclusive portable benefits for members of 45,000+ unions, associations, and veteran service organizations.</p>
+          <a href="#contact" class="btn btn-gold btn-sm">See If I Qualify →</a>
         </div>
-        <div class="product-sub-grid">
-          <div class="product-sub-card">
+        <div class="product-card-grid">
+          <div class="product-card">
+            <div class="product-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
             <h4>Freedom of Choice</h4>
             <p>You choose the coverage that fits your life — not a one-size-fits-all plan. Benefits explained in plain, everyday language.</p>
           </div>
-          <div class="product-sub-card">
+          <div class="product-card">
+            <div class="product-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
             <h4>Portable Coverage</h4>
-            <p>Benefits that come with you — not your employer. They don't end when your job does, you retire, or you get laid off.</p>
+            <p>Benefits that come with you — not your employer. They don't end when your job does, you retire, or get laid off.</p>
           </div>
-          <div class="product-sub-card">
+          <div class="product-card">
+            <div class="product-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
             <h4>Family Coverage</h4>
             <p>Extend benefits to your spouse and children at group rates not available to the general public.</p>
           </div>
@@ -479,6 +504,16 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    document.querySelectorAll('.product-tab').forEach(function(tab) {
+      tab.addEventListener('click', function() {
+        document.querySelectorAll('.product-tab').forEach(function(t) { t.classList.remove('active'); });
+        document.querySelectorAll('.product-panel').forEach(function(p) { p.classList.remove('active'); });
+        tab.classList.add('active');
+        document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
+      });
+    });
+  </script>
   <script>
     var APPS_SCRIPT_URL = 'YOUR_APPS_SCRIPT_URL_HERE';
 
