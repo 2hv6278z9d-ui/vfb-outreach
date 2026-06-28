@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You | AO Heritage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .thankyou-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 120px 24px 80px;
+    }
+    .thankyou-inner {
+      max-width: 560px;
+    }
+    .thankyou-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      border: 2px solid var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 32px;
+    }
+    .thankyou-icon svg {
+      width: 32px;
+      height: 32px;
+      stroke: var(--gold);
+      fill: none;
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .thankyou-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+    .thankyou-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(36px, 5vw, 56px);
+      line-height: 1.15;
+      color: var(--text);
+      margin-bottom: 20px;
+    }
+    .thankyou-sub {
+      font-size: 17px;
+      line-height: 1.7;
+      color: var(--text-mid);
+      margin-bottom: 40px;
+    }
+    .thankyou-actions {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><img src="logo.png" alt="AO Heritage" class="nav-logo-img"> AO Heritage</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="about.html">About</a>
+        <a href="index.html#benefits">Benefits</a>
+        <a href="index.html#team">Team</a>
+        <a href="index.html#testimonials">Stories</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="apply.html" class="nav-cta">Apply Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="thankyou-section">
+    <div class="thankyou-inner reveal">
+      <div class="thankyou-icon">
+        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+      <p class="thankyou-label" id="thankLabel">Message Received</p>
+      <h1 class="thankyou-title" id="thankTitle">We'll be in touch<br><em>shortly.</em></h1>
+      <p class="thankyou-sub" id="thankSub">Thank you for reaching out to AO Heritage. A member of our team will get back to you within 24–48 hours.</p>
+      <div class="thankyou-actions">
+        <a href="index.html" class="btn btn-dark">Back to Home</a>
+        <a href="about.html" class="btn btn-ghost">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('type') === 'apply') {
+      document.getElementById('thankLabel').textContent = 'Application Received';
+      document.getElementById('thankTitle').innerHTML = 'Thanks for applying<br><em>to AO Heritage.</em>';
+      document.getElementById('thankSub').textContent = "We've received your application and will review it shortly. If you're a great fit, someone from our team will reach out within 2–3 business days.";
+    }
+  </script>
+</body>
+</html>
