@@ -138,7 +138,7 @@ body {
 .hero {
   position: relative; min-height: 100vh;
   display: flex; align-items: center;
-  background: var(--white); overflow: hidden;
+  background-image: url('https://images.unsplash.com/photo-1505533321630-975218a5f66f?w=1920&q=85&fit=crop'); background-size: cover; background-position: center center; background-repeat: no-repeat; overflow: hidden;
   padding-top: 68px;
   isolation: isolate;
 }
@@ -154,7 +154,7 @@ body {
 .hero-photo-side img { width: 70%; max-width: 480px; height: auto; object-fit: contain; opacity: 1; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 .hero-photo-side::after {
   content: ''; position: absolute; inset: 0;
-  background: linear-gradient(to right, var(--white) 0%, rgba(255,255,255,0.2) 30%, transparent 55%);
+  display: none;
 }
 .hero-photo-placeholder {
   position: absolute; right: 0; top: 0; bottom: 0; width: 50%;
@@ -178,11 +178,11 @@ body {
 }
 .hero-badge::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
 .hero-title {
-  font-size: clamp(40px, 5.5vw, 66px); color: var(--navy);
+  font-size: clamp(40px, 5.5vw, 66px); color: #ffffff;
   font-weight: 800; letter-spacing: -0.03em; line-height: 1.08; margin-bottom: 24px;
 }
 .hero-title em { color: var(--gold); display: block; }
-.hero-sub {
+.hero-sub { text-shadow: 0 2px 12px rgba(0,20,60,0.6), 0 1px 4px rgba(0,20,60,0.5);
   font-size: 17px; color: var(--text-mid); line-height: 1.72;
   margin-bottom: 40px; max-width: 460px;
 }
