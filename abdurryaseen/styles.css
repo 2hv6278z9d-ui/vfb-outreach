@@ -144,10 +144,15 @@ body {
 }
 .hero-bg-gradient {
   position: absolute; inset: 0;
+  background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+}
+.hero-bg-gradient::after {
+  content: ''; position: absolute; inset: 0;
   background:
-    radial-gradient(ellipse 60% 70% at 75% 50%, rgba(30,58,95,0.6) 0%, transparent 70%),
-    radial-gradient(ellipse 40% 50% at 5% 85%, rgba(201,168,76,0.07) 0%, transparent 55%),
-    linear-gradient(135deg, #0d1e3c 0%, #162847 55%, #1e3a5f 100%);
+    linear-gradient(to right, rgba(13,30,60,0.88) 0%, rgba(13,30,60,0.65) 55%, rgba(13,30,60,0.25) 100%),
+    linear-gradient(to top, rgba(13,30,60,0.7) 0%, transparent 40%);
 }
 .hero-photo-side {
   position: absolute; right: 0; top: 0; bottom: 0; width: 50%;
