@@ -349,7 +349,7 @@ body {
 .steps-grid {
   display: flex; align-items: stretch;
   background: var(--white); border-radius: var(--radius-lg);
-  border: 1px solid var(--gray-200); overflow: hidden; box-shadow: var(--shadow);
+  border: 1px solid var(--gray-200); overflow: hidden; box-shadow: 0 2px 12px rgba(13,30,60,0.06);
 }
 .step { flex: 1; padding: 40px 32px; border-right: 1px solid var(--gray-200); }
 .step:last-child { border-right: none; }
