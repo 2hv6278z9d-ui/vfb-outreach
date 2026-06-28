@@ -96,41 +96,41 @@ body {
 /* ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ NAVBAR ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ */
 .navbar {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  background: var(--white);
-  border-bottom: 1px solid var(--gray-200);
+  background: #0d1e3c;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
   transition: box-shadow var(--transition);
 }
-.navbar.scrolled { box-shadow: 0 2px 20px rgba(13,30,60,0.1); }
+.navbar.scrolled { box-shadow: 0 2px 20px rgba(13,30,60,0.4); }
 .nav-container {
   max-width: 1160px; margin: 0 auto; padding: 0 24px;
   display: flex; align-items: center; gap: 40px; height: 68px;
 }
 .nav-logo {
-  font-size: 17px; font-weight: 700; color: var(--navy);
+  font-size: 17px; font-weight: 700; color: var(--white);
   flex-shrink: 0; letter-spacing: -0.01em;
 }
 .nav-logo em { color: var(--gold); font-style: italic; }
 .nav-links { display: flex; align-items: center; gap: 6px; margin-left: auto; }
 .nav-links a {
-  font-size: 14px; font-weight: 500; color: var(--text-mid);
+  font-size: 14px; font-weight: 500; color: rgba(255,255,255,0.75);
   padding: 8px 14px; border-radius: 8px; transition: all var(--transition);
 }
 .nav-links a:hover { color: var(--white) !important; background: rgba(255,255,255,0.08); }
-.nav-links .nav-link-subtle { color: var(--gray-500); font-size: 13px; }
-.nav-links .nav-link-subtle:hover { color: var(--navy); background: none; }
+.nav-links .nav-link-subtle { color: rgba(255,255,255,0.45); font-size: 13px; }
+.nav-links .nav-link-subtle:hover { color: rgba(255,255,255,0.75) !important; background: none; }
 .nav-cta {
   background: var(--gold) !important; color: var(--navy) !important;
   font-weight: 700 !important; padding: 9px 20px !important; border-radius: 8px !important;
 }
-.nav-cta:hover { background: var(--gold-light) !important; }
+.nav-cta:hover { background: var(--gold-light) !important; color: var(--navy) !important; }
 .nav-cta-ghost {
   border: 1.5px solid rgba(201,168,76,0.45) !important;
   color: var(--gold) !important; border-radius: 8px !important;
 }
-.nav-cta-ghost:hover { border-color: var(--gold) !important; background: rgba(201,168,76,0.08) !important; }
+.nav-cta-ghost:hover { border-color: var(--gold) !important; background: rgba(201,168,76,0.08) !important; color: var(--gold) !important; }
 
 .nav-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
-.nav-toggle span { display: block; width: 22px; height: 2px; background: var(--navy); border-radius: 2px; transition: all 0.3s; }
+.nav-toggle span { display: block; width: 22px; height: 2px; background: var(--white); border-radius: 2px; transition: all 0.3s; }
 .nav-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
 .nav-toggle.active span:nth-child(2) { opacity: 0; }
 
