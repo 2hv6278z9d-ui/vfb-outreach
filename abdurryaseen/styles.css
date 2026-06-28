@@ -115,7 +115,7 @@ body {
   font-size: 14px; font-weight: 500; color: var(--text-mid);
   padding: 8px 14px; border-radius: 8px; transition: all var(--transition);
 }
-.nav-links a:hover { color: var(--white); background: rgba(255,255,255,0.08); }
+.nav-links a:hover { color: var(--white) !important; background: rgba(255,255,255,0.08); }
 .nav-links .nav-link-subtle { color: var(--gray-500); font-size: 13px; }
 .nav-links .nav-link-subtle:hover { color: var(--navy); background: none; }
 .nav-cta {
@@ -276,6 +276,7 @@ body {
   background: var(--navy); color: var(--white);
   border-color: var(--navy); box-shadow: var(--shadow);
 }
+.product-tab.active:hover { color: var(--white); background: var(--navy-light); }
 .product-tab.active svg { stroke: var(--gold); }
 .product-panel { display: none; }
 .product-panel.active { display: block; animation: fadeTab 0.3s ease; }
