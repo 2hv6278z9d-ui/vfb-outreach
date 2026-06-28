@@ -13,7 +13,7 @@
   --gray-500:    #7a8499;
   --text:        #0d1e3c;
   --text-mid:    #4a5568;
-  --radius:      10px;
+  --radius:      10px
   --radius-lg:   18px;
   --shadow:      0 4px 24px rgba(13,30,60,0.10);
   --shadow-lg:   0 12px 48px rgba(13,30,60,0.18);
@@ -70,9 +70,9 @@ body {
 }
 .btn-gold:hover { background: var(--gold-light); border-color: var(--gold-light); }
 .btn-outline-white {
-  background: transparent; color: var(--navy); border-color: rgba(13,30,60,0.4);
+  background: rgba(255,255,255,0.12); color: var(--white); border-color: rgba(255,255,255,0.75);
 }
-.btn-outline-white:hover { background: rgba(13,30,60,0.05); border-color: var(--navy); }
+.btn-outline-white:hover { background: rgba(255,255,255,0.22); border-color: var(--white); }
 .btn-navy {
   background: var(--navy); color: var(--white); border-color: var(--navy);
 }
@@ -172,7 +172,7 @@ body {
 .hero-badge {
   display: inline-flex; align-items: center; gap: 8px;
   background: rgba(201,168,76,0.12); border: 1px solid rgba(201,168,76,0.28);
-  color: var(--gold-dark); font-size: 12px; font-weight: 600;
+  color: var(--gold-light); font-size: 12px; font-weight: 600;
   letter-spacing: 0.08em; text-transform: uppercase;
   padding: 7px 16px; border-radius: 999px; margin-bottom: 28px;
 }
@@ -183,12 +183,12 @@ body {
 }
 .hero-title em { color: var(--gold); display: block; }
 .hero-sub { text-shadow: 0 2px 12px rgba(0,20,60,0.6), 0 1px 4px rgba(0,20,60,0.5);
-  font-size: 17px; color: var(--text-mid); line-height: 1.72;
+  font-size: 17px; color: rgba(255,255,255,0.92); line-height: 1.72;
   margin-bottom: 40px; max-width: 460px;
 }
 .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 48px; }
 .hero-trust { display: flex; flex-direction: column; gap: 12px; }
-.trust-item { display: flex; align-items: center; gap: 10px; color: var(--text-mid); font-size: 14px; }
+.trust-item { display: flex; align-items: center; gap: 10px; color: rgba(255,255,255,0.9); font-size: 14px; text-shadow: 0 1px 6px rgba(0,0,0,0.6); }
 .trust-check {
   width: 22px; height: 22px; border-radius: 50%;
   background: rgba(201,168,76,0.18); border: 1.5px solid rgba(201,168,76,0.38);
@@ -318,7 +318,7 @@ body {
 .contact-left .section-title { font-size: 32px; }
 .contact-left > p { font-size: 16px; color: var(--text-mid); line-height: 1.7; margin: 16px 0 32px; }
 .contact-trust { display: flex; flex-direction: column; gap: 12px; }
-.contact-trust .trust-item { color: var(--text-mid); font-size: 14px; }
+.contact-trust .trust-item { color: rgba(255,255,255,0.9); font-size: 14px; text-shadow: 0 1px 6px rgba(0,0,0,0.6); }
 .contact-trust .trust-check { background: rgba(13,30,60,0.07); border-color: rgba(13,30,60,0.18); color: var(--navy); }
 .contact-form { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 40px; box-shadow: var(--shadow-lg); }
 
