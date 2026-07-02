@@ -166,15 +166,16 @@ body {
   overflow: hidden;
 }
 .hero-photo-side img { width: 60%; max-width: 400px; height: auto; object-fit: contain; opacity: 1; position: absolute; top: 44%; left: 50%; transform: translate(-50%, -50%); }
+@font-face { font-family: 'FuturisticArmour'; src: url('fonts/FuturisticArmour.otf') format('opentype'); }
 .hero-logo-wordmark {
   position: absolute; bottom: 22%; left: 50%; transform: translateX(-50%);
-  font-family: 'DM Serif Display', serif;
-  font-size: clamp(32px, 4vw, 56px);
-  letter-spacing: 0.25em;
+  font-family: 'FuturisticArmour', sans-serif;
+  font-size: clamp(28px, 3.5vw, 52px);
+  letter-spacing: 0.2em;
   color: var(--gold);
   text-shadow: 0 0 40px rgba(201,168,76,0.4);
   white-space: nowrap;
-  font-style: italic;
+  font-style: normal;
 }
 .hero-photo-side::after {
   content: ''; position: absolute; inset: 0;
