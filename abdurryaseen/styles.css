@@ -166,12 +166,13 @@ body {
   overflow: hidden;
 }
 .hero-photo-side img { width: 60%; max-width: 400px; height: auto; object-fit: contain; opacity: 1; position: absolute; top: 44%; left: 50%; transform: translate(-50%, -50%); }
-@font-face { font-family: 'FuturisticArmour'; src: url('fonts/FuturisticArmour.otf') format('opentype'); }
+@font-face { font-family: 'Scaver'; src: url('fonts/Scaver-ExtraLight.ttf') format('truetype'); font-weight: 200; }
 .hero-logo-wordmark {
   position: absolute; bottom: 22%; left: 50%; transform: translateX(-50%);
-  font-family: 'FuturisticArmour', sans-serif;
+  font-family: 'Scaver', sans-serif;
+  font-weight: 200;
   font-size: clamp(28px, 3.5vw, 52px);
-  letter-spacing: 0.2em;
+  letter-spacing: 0.3em;
   color: var(--gold);
   text-shadow: 0 0 40px rgba(201,168,76,0.4);
   white-space: nowrap;
