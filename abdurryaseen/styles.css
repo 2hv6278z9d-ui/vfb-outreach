@@ -166,11 +166,11 @@ body {
   overflow: hidden;
 }
 .hero-photo-side img { width: 60%; max-width: 400px; height: auto; object-fit: contain; opacity: 1; position: absolute; top: 44%; left: 50%; transform: translate(-50%, -50%); }
-@font-face { font-family: 'Scaver'; src: url('fonts/Scaver-ExtraLight.ttf') format('truetype'); font-weight: 200; }
+@font-face { font-family: 'Scaver'; src: url('fonts/Scaver-Light.ttf') format('truetype'); font-weight: 300; }
 .hero-logo-wordmark {
   position: absolute; bottom: 22%; left: 50%; transform: translateX(-50%);
   font-family: 'Scaver', sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   font-size: clamp(28px, 3.5vw, 52px);
   letter-spacing: 0.3em;
   color: var(--gold);
