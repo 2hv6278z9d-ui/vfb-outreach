@@ -134,17 +134,20 @@ em {
 }
 
 .nav-cta {
-  background: var(--text);
-  color: var(--white) !important;
-  padding: 10px 24px;
-  border-radius: 100px;
-  font-weight: 500 !important;
+  background: #c9a84c !important;
+  color: #0d1e3c !important;
+  padding: 9px 20px !important;
+  border-radius: 8px !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
   transition: all 0.3s var(--ease) !important;
 }
 
 .nav-cta:hover {
-  opacity: 0.85;
-  transform: translateY(-1px);
+  background: #e2c675 !important;
+  color: #0d1e3c !important;
+  transform: none;
+  opacity: 1;
 }
 
 .nav-toggle {
