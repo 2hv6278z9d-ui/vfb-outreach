@@ -97,8 +97,9 @@ em {
 @font-face { font-family: 'Greek'; src: url('../fonts/greek.ttf') format('truetype'); }
 @font-face { font-family: 'FuturisticArmour'; src: url('../fonts/FuturisticArmour.otf') format('opentype'); }
 @font-face { font-family: 'AmericanSignature'; src: url('../fonts/AmericanSignature.ttf') format('truetype'); }
+@font-face { font-family: 'ModernRomance'; src: url('../fonts/ModernRomance.otf') format('opentype'); }
 .nav-logo {
-  font-family: 'AmericanSignature', 'Inter', sans-serif;
+  font-family: 'ModernRomance', 'Inter', sans-serif;
   font-size: 26px;
   font-weight: 400;
   letter-spacing: 0.02em;
