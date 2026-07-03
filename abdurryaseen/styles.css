@@ -110,9 +110,9 @@ body {
   display: flex; align-items: center; gap: 40px; height: 68px;
 }
 .nav-logo {
-  font-family: 'ModernRomance', 'Inter', sans-serif;
-  font-size: 26px; font-weight: 400; color: var(--navy);
-  flex-shrink: 0; letter-spacing: 0.02em; text-decoration: none;
+  font-family: 'BebasNeue', 'Inter', sans-serif;
+  font-size: 24px; font-weight: 400; color: var(--navy);
+  flex-shrink: 0; letter-spacing: 0.1em; text-decoration: none;
 }
 .nav-logo em { color: var(--gold); font-style: italic; }
 .nav-logo .nav-logo-img { height: 28px; width: 28px; object-fit: contain; display: inline-block; vertical-align: middle; margin-right: 8px; }
@@ -173,6 +173,7 @@ body {
 @font-face { font-family: 'FuturisticArmour'; src: url('fonts/FuturisticArmour.otf') format('opentype'); }
 @font-face { font-family: 'AmericanSignature'; src: url('fonts/AmericanSignature.ttf') format('truetype'); }
 @font-face { font-family: 'ModernRomance'; src: url('fonts/ModernRomance.otf') format('opentype'); }
+@font-face { font-family: 'BebasNeue'; src: url('fonts/BebasNeue.ttf') format('truetype'); }
 .hero-logo-wordmark {
   position: absolute; bottom: 22%; left: 50%; transform: translateX(-50%);
   font-family: 'Cinzel', serif;

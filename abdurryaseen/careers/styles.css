@@ -98,11 +98,12 @@ em {
 @font-face { font-family: 'FuturisticArmour'; src: url('../fonts/FuturisticArmour.otf') format('opentype'); }
 @font-face { font-family: 'AmericanSignature'; src: url('../fonts/AmericanSignature.ttf') format('truetype'); }
 @font-face { font-family: 'ModernRomance'; src: url('../fonts/ModernRomance.otf') format('opentype'); }
+@font-face { font-family: 'BebasNeue'; src: url('../fonts/BebasNeue.ttf') format('truetype'); }
 .nav-logo {
-  font-family: 'ModernRomance', 'Inter', sans-serif;
-  font-size: 26px;
+  font-family: 'BebasNeue', 'Inter', sans-serif;
+  font-size: 24px;
   font-weight: 400;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.1em;
   color: #0d1e3c;
   text-decoration: none;
   z-index: 101;
