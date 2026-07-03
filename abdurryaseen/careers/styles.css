@@ -95,8 +95,9 @@ em {
 }
 
 @font-face { font-family: 'Greek'; src: url('../fonts/greek.ttf') format('truetype'); }
+@font-face { font-family: 'FuturisticArmour'; src: url('../fonts/FuturisticArmour.otf') format('opentype'); }
 .nav-logo {
-  font-family: 'Cinzel', serif;
+  font-family: 'FuturisticArmour', 'Inter', sans-serif;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.05em;
