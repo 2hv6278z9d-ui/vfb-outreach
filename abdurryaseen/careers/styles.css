@@ -113,6 +113,7 @@ em {
   flex-shrink: 0;
 }
 .nav-logo em { color: #c9a84c; font-style: italic; }
+.nav-logo .logo-gold { color: #c9a84c; font-style: normal; }
 
 .nav-logo-img {
   height: 38px;
