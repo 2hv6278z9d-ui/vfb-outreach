@@ -115,6 +115,7 @@ body {
   flex-shrink: 0; letter-spacing: 0.05em; text-decoration: none;
 }
 .nav-logo em { color: var(--gold); font-style: italic; }
+.nav-logo .nav-logo-img { height: 28px; width: 28px; object-fit: contain; display: inline-block; vertical-align: middle; margin-right: 8px; }
 .nav-links { display: flex; align-items: center; gap: 6px; margin-left: auto; }
 .nav-links a {
   font-size: 14px; font-weight: 500; color: var(--text-mid);
