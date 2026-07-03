@@ -94,11 +94,12 @@ em {
   justify-content: space-between;
 }
 
+@font-face { font-family: 'Greek'; src: url('../fonts/greek.ttf') format('truetype'); }
 .nav-logo {
-  font-family: 'Inter', sans-serif;
-  font-size: 17px;
-  font-weight: 700;
-  letter-spacing: -0.01em;
+  font-family: 'Greek', 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
   color: #0d1e3c;
   text-decoration: none;
   z-index: 101;

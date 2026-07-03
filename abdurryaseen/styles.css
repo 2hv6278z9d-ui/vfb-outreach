@@ -110,8 +110,9 @@ body {
   display: flex; align-items: center; gap: 40px; height: 68px;
 }
 .nav-logo {
-  font-size: 17px; font-weight: 700; color: var(--navy);
-  flex-shrink: 0; letter-spacing: -0.01em; text-decoration: none;
+  font-family: 'Greek', 'Inter', sans-serif;
+  font-size: 18px; font-weight: 400; color: var(--navy);
+  flex-shrink: 0; letter-spacing: 0.05em; text-decoration: none;
 }
 .nav-logo em { color: var(--gold); font-style: italic; }
 .nav-links { display: flex; align-items: center; gap: 6px; margin-left: auto; }
@@ -167,6 +168,7 @@ body {
 }
 .hero-photo-side img { width: 60%; max-width: 400px; height: auto; object-fit: contain; opacity: 1; position: absolute; top: 44%; left: 50%; transform: translate(-50%, -50%); }
 @font-face { font-family: 'Scaver'; src: url('fonts/Scaver-Light.ttf') format('truetype'); font-weight: 300; }
+@font-face { font-family: 'Greek'; src: url('fonts/greek.ttf') format('truetype'); }
 .hero-logo-wordmark {
   position: absolute; bottom: 22%; left: 50%; transform: translateX(-50%);
   font-family: 'Scaver', sans-serif;
