@@ -96,7 +96,7 @@ em {
 
 @font-face { font-family: 'Greek'; src: url('../fonts/greek.ttf') format('truetype'); }
 .nav-logo {
-  font-family: 'Greek', 'Inter', sans-serif;
+  font-family: 'Cinzel', serif;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.05em;
