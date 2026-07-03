@@ -96,11 +96,12 @@ em {
 
 @font-face { font-family: 'Greek'; src: url('../fonts/greek.ttf') format('truetype'); }
 @font-face { font-family: 'FuturisticArmour'; src: url('../fonts/FuturisticArmour.otf') format('opentype'); }
+@font-face { font-family: 'AmericanSignature'; src: url('../fonts/AmericanSignature.ttf') format('truetype'); }
 .nav-logo {
-  font-family: 'FuturisticArmour', 'Inter', sans-serif;
-  font-size: 18px;
+  font-family: 'AmericanSignature', 'Inter', sans-serif;
+  font-size: 26px;
   font-weight: 400;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.02em;
   color: #0d1e3c;
   text-decoration: none;
   z-index: 101;

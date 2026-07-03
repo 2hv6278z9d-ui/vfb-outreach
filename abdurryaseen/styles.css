@@ -110,9 +110,9 @@ body {
   display: flex; align-items: center; gap: 40px; height: 68px;
 }
 .nav-logo {
-  font-family: 'FuturisticArmour', 'Inter', sans-serif;
-  font-size: 18px; font-weight: 400; color: var(--navy);
-  flex-shrink: 0; letter-spacing: 0.05em; text-decoration: none;
+  font-family: 'AmericanSignature', 'Inter', sans-serif;
+  font-size: 26px; font-weight: 400; color: var(--navy);
+  flex-shrink: 0; letter-spacing: 0.02em; text-decoration: none;
 }
 .nav-logo em { color: var(--gold); font-style: italic; }
 .nav-logo .nav-logo-img { height: 28px; width: 28px; object-fit: contain; display: inline-block; vertical-align: middle; margin-right: 8px; }
@@ -171,6 +171,7 @@ body {
 @font-face { font-family: 'Scaver'; src: url('fonts/Scaver-Light.ttf') format('truetype'); font-weight: 300; }
 @font-face { font-family: 'Greek'; src: url('fonts/greek.ttf') format('truetype'); }
 @font-face { font-family: 'FuturisticArmour'; src: url('fonts/FuturisticArmour.otf') format('opentype'); }
+@font-face { font-family: 'AmericanSignature'; src: url('fonts/AmericanSignature.ttf') format('truetype'); }
 .hero-logo-wordmark {
   position: absolute; bottom: 22%; left: 50%; transform: translateX(-50%);
   font-family: 'Cinzel', serif;
