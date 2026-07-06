@@ -72,26 +72,25 @@ em {
   left: 0;
   right: 0;
   z-index: 100;
-  padding: 16px 0;
   background: #ffffff;
   border-bottom: 1px solid #e5e7eb;
-  transition: all 0.4s var(--ease);
+  transition: box-shadow 0.4s var(--ease);
 }
 
 .navbar.scrolled {
-  padding: 16px 0;
   background: #ffffff;
   box-shadow: 0 2px 16px rgba(13,30,60,0.1);
   border-bottom: 1px solid #e5e7eb;
 }
 
 .nav-container {
-  max-width: 1200px;
+  max-width: 1160px;
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 0 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 68px;
 }
 
 @font-face { font-family: 'Greek'; src: url('../fonts/greek.ttf') format('truetype'); }
