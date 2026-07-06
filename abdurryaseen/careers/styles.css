@@ -13,12 +13,12 @@
   --pearl: #f6f5f3;
   --pearl-dark: #edecea;
   --warm-gray: #c4c0b9;
-  --text: #1a1917;
-  --text-mid: #6b6860;
-  --text-light: #9e9a92;
-  --accent: #1a1917;
-  --gold: #b8962e;
-  --gold-light: #d4b44a;
+  --text: #0d1e3c;
+  --text-mid: #4a5568;
+  --text-light: #718096;
+  --accent: #0d1e3c;
+  --gold: #c9a84c;
+  --gold-light: #e2c675;
   --radius: 16px;
   --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
