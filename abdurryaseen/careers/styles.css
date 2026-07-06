@@ -126,15 +126,18 @@ em {
 }
 
 .nav-links a {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   color: var(--text-mid);
-  letter-spacing: 0.3px;
-  transition: color 0.3s;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: all 0.3s;
+  text-decoration: none;
 }
 
 .nav-links a:hover {
-  color: var(--gold);
+  color: #0d1e3c;
+  background: #f3f4f6;
 }
 
 .nav-cta {
