@@ -1098,7 +1098,6 @@ em {
 .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px; padding-bottom: 48px; }
 .footer-col-brand .nav-logo { display: inline-flex; align-items: center; margin-bottom: 16px; color: #ffffff; text-decoration: none !important; }
 .footer-col-brand .nav-logo .logo-gold { color: var(--gold); }
-.footer-col-brand .nav-logo-img { filter: brightness(0) invert(1); }
 .footer-tagline { font-size: 13px; color: rgba(255,255,255,0.55); line-height: 1.7; max-width: 280px; }
 .footer-col-title { font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
 .footer-col a { display: block; font-size: 13px; color: rgba(255,255,255,0.65); text-decoration: none; padding: 4px 0; transition: color 0.3s; }
