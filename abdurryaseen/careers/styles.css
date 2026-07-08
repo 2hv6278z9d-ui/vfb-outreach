@@ -1094,51 +1094,18 @@ em {
 }
 
 /* ---- FOOTER ---- */
-.footer {
-  padding: 60px 0 40px;
-  border-top: 1px solid var(--pearl-dark);
-}
-
-.footer-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  gap: 80px;
-}
-
-.footer-left .nav-logo {
-  margin-bottom: 16px;
-  display: inline-block;
-}
-
-.footer-legal {
-  font-size: 12px;
-  line-height: 1.6;
-  color: var(--text-light);
-  max-width: 400px;
-}
-
-.footer-links {
-  display: flex;
-  gap: 28px;
-  margin-bottom: 20px;
-}
-
-.footer-links a {
-  font-size: 13px;
-  color: var(--text-mid);
-  transition: color 0.3s;
-}
-
-.footer-links a:hover {
-  color: var(--gold);
-}
-
-.footer-copy {
-  font-size: 12px;
-  color: var(--text-light);
-  text-align: right;
-}
+.footer { background: #0d1e3c; border-top: none; padding: 60px 0 0; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px; padding-bottom: 48px; }
+.footer-col-brand .nav-logo { display: inline-flex; align-items: center; margin-bottom: 16px; color: #ffffff !important; text-decoration: none !important; }
+.footer-col-brand .nav-logo-img { filter: brightness(0) invert(1); }
+.footer-tagline { font-size: 13px; color: rgba(255,255,255,0.55); line-height: 1.7; max-width: 280px; }
+.footer-col-title { font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+.footer-col a { display: block; font-size: 13px; color: rgba(255,255,255,0.65); text-decoration: none; padding: 4px 0; transition: color 0.3s; }
+.footer-col a:hover { color: #ffffff; }
+.footer-col p { font-size: 13px; color: rgba(255,255,255,0.55); line-height: 1.7; margin-bottom: 4px; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding: 24px 0; display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; flex-wrap: wrap; }
+.footer-legal { font-size: 11px; color: rgba(255,255,255,0.35); line-height: 1.8; max-width: 680px; }
+.footer-copy { font-size: 12px; color: rgba(255,255,255,0.4); white-space: nowrap; }
 
 /* ---- PARTNERS BANNER (vertical, left side) ---- */
 .partners-banner {
@@ -1480,14 +1447,8 @@ em {
     width: 100%;
   }
 
-  .footer-inner {
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .footer-copy {
-    text-align: left;
-  }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .footer-bottom { flex-direction: column; gap: 12px; }
 
   .hero-actions {
     flex-direction: column;
