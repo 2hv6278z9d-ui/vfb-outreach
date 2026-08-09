@@ -353,28 +353,10 @@
         <div class="split-content reveal">
           <h2 class="section-title">Get in <em>touch</em></h2>
           <p>Have a question or ready to learn more? Drop us a message and we'll get back to you.</p>
-          <form class="contact-form" id="contactForm">
-            <input type="hidden" name="form_type" value="Contact">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="contactName">Name</label>
-                <input type="text" id="contactName" name="name" placeholder="Your name" required>
-              </div>
-              <div class="form-group">
-                <label for="contactPhone">Phone</label>
-                <input type="tel" id="contactPhone" name="phone" placeholder="(555) 123-4567" required>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="contactEmail">Email</label>
-              <input type="email" id="contactEmail" name="email" placeholder="you@email.com" required>
-            </div>
-            <div class="form-group">
-              <label for="contactMessage">Question</label>
-              <textarea id="contactMessage" name="message" rows="4" placeholder="How can we help you?" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-dark">Send Message</button>
-          </form>
+          <div class="contact-widget-cta">
+            <h3>Chat with us now</h3>
+            <p>Click the chat icon in the corner of your screen to start a conversation — we'll get back to you.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -411,32 +393,6 @@
   </footer>
 
   <script src="script.js"></script>
-  <script>
-    // ↓ Paste your Apps Script web app URL here after deploying
-    var APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyaM9kHvbmZsVkmr0Mr59QtKSrp6dJEkJHSLSS3YJqpctxXPhpJcZTqZR4PWvYT58Ny/exec';
-
-    document.getElementById('contactForm').addEventListener('submit', async function(e) {
-      e.preventDefault();
-      var btn = this.querySelector('button[type="submit"]');
-      btn.textContent = 'Sending...';
-      btn.disabled = true;
-
-      try {
-        var data = new URLSearchParams(new FormData(this));
-        var res = await fetch(APPS_SCRIPT_URL, { method: 'POST', body: data });
-        var json = await res.json();
-        if (json.status === 'success') {
-          this.innerHTML = '<div style="text-align:center;padding:40px 0"><div style="font-size:48px;color:#111;margin-bottom:16px">&#10003;</div><h3 style="font-family:WorkforceSans,sans-serif;font-size:1.5rem;margin-bottom:8px">Message Sent!</h3><p>We\'ll get back to you soon.</p></div>';
-        } else {
-          throw new Error(json.message || 'Submission failed');
-        }
-      } catch(err) {
-        btn.textContent = 'Send Message';
-        btn.disabled = false;
-        alert('Something went wrong. Please try again or email us directly.');
-      }
-    });
-  </script>
 <script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6a773d3be425d99b061a52fb" data-source="WEB_USER"></script>
 </body>
 </html>
