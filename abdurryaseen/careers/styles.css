@@ -870,6 +870,29 @@ em {
   margin: 0 auto;
 }
 
+.contact-widget-cta {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.contact-widget-cta h3 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.contact-widget-cta p {
+  font-size: 16px;
+  color: var(--text-mid);
+  max-width: 420px;
+  line-height: 1.7;
+  margin: 0 auto;
+}
+
 .apply-form {
   display: flex;
   flex-direction: column;
