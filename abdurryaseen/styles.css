@@ -118,7 +118,7 @@ body {
 .nav-logo {
   font-family: 'BebasNeue', 'Inter', sans-serif;
   font-size: 24px; font-weight: 400; color: var(--navy);
-  flex-shrink: 0; letter-spacing: 0.1em; word-spacing: 0.15em; text-decoration: none;
+  flex-shrink: 0; letter-spacing: 0.1em; word-spacing: 0.02em; text-decoration: none;
 }
 .nav-logo em { color: var(--gold); font-style: italic; }
 .nav-logo .logo-gold { color: var(--gold); font-style: normal; }
