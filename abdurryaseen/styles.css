@@ -538,7 +538,19 @@ body {
   .apply-form-wrapper { padding: 24px 20px; }
   .contact-form { padding: 28px 20px; }
   .product-cat-header .btn-sm { display: none; }
- 
- 
- 
- 
+}
+
+/* ---- CLIENT STORIES VIDEO GRID ---- */
+.client-stories-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .client-stories-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
