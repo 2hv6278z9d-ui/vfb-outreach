@@ -687,15 +687,30 @@ em {
 }
 
 /* ---- TESTIMONIAL VIDEO ---- */
-.testimonial-video {
-  max-width: 800px;
+.testimonial-video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  max-width: 1000px;
   margin: 0 auto;
+}
+
+.testimonial-video {
+  margin: 0 auto;
+  width: 100%;
 }
 
 .testimonial-video .video-wrapper {
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+}
+
+@media (max-width: 768px) {
+  .testimonial-video-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
 }
 
 /* ---- CTA ---- */
