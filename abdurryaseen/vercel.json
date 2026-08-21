@@ -3,7 +3,9 @@
   "trailingSlash": false,
   "redirects": [
     { "source": "/index.html", "destination": "/", "permanent": true },
-    { "source": "/quote.html", "destination": "/quote", "permanent": true },
+    { "source": "/quote.html", "destination": "/get-a-quote", "permanent": true },
+    { "source": "/quote", "destination": "/get-a-quote", "permanent": true },
+    { "source": "/get-a-quote.html", "destination": "/get-a-quote", "permanent": true },
     { "source": "/apply.html", "destination": "/apply", "permanent": true }
   ]
 }
