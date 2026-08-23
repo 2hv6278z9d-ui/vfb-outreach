@@ -3,3 +3,4 @@
 /quote              /get-a-quote          301
 /quote.html          /get-a-quote          301
 /get-a-quote.html    /get-a-quote          301
+/products.html       /products             301
