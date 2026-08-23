@@ -57,53 +57,13 @@
         <p class="section-sub">Permanent, portable benefits that stay with you — whether you change jobs, retire, or get laid off. Your coverage never expires.</p>
       </div>
 
-      <!-- Tab Nav -->
-      <div class="product-tabs reveal">
-        <button class="product-tab active" data-tab="life">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-          Life Insurance
-        </button>
-        <button class="product-tab" data-tab="health">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          Supplemental Health
-        </button>
-        <button class="product-tab" data-tab="union">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-          Union &amp; Veteran
-        </button>
-      </div>
-
-      <!-- Life Panel -->
-      <div class="product-panel active" id="tab-life">
-        <div class="product-panel-intro">
-          <p>Term and whole life solutions designed with your family in mind. Permanent, portable coverage that never lapses.</p>
-          <a href="get-a-quote.html" class="btn btn-gold btn-sm">Get a Quote →</a>
-        </div>
-        <div class="product-card-grid">
-          <div class="product-card">
-            <div class="product-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            </div>
-            <h4>Freedom of Choice</h4>
-            <p>You choose the coverage that fits your life — not a one-size-fits-all plan. Benefits explained in plain, everyday language.</p>
-          </div>
-          <div class="product-card">
-            <div class="product-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-            </div>
-            <h4>Whole Life Insurance</h4>
-            <p>Permanent coverage that never lapses, with premiums locked in at issue and cash value that grows over time.</p>
-          </div>
-          <div class="product-card">
-            <div class="product-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            </div>
-            <h4>Children's Life Insurance</h4>
-            <p>Lock in affordable coverage for your child today. Rates are guaranteed and follow them into adulthood.</p>
-          </div>
+      <!-- Life Section -->
+      <div id="tab-life">
+        <div class="section-head reveal" style="text-align:left;">
+          <span class="label-tag">Life Insurance</span>
         </div>
 
-        <div class="section-head reveal" style="margin:56px 0 32px;text-align:left;">
+        <div class="section-head reveal" style="margin:24px 0 32px;text-align:left;">
           <span class="label-tag">Full Lineup</span>
           <h3 class="section-title" style="font-size:clamp(22px,2.6vw,30px);">Complete life insurance product lineup</h3>
         </div>
@@ -309,8 +269,11 @@
         </div>
       </div>
 
-      <!-- Health Panel -->
-      <div class="product-panel" id="tab-health">
+      <!-- Health Section -->
+      <div id="tab-health" style="margin-top:72px;padding-top:56px;border-top:1px solid var(--gray-200);">
+        <div class="section-head reveal" style="text-align:left;margin-bottom:32px;">
+          <span class="label-tag">Supplemental Health</span>
+        </div>
         <div class="product-panel-intro">
           <p>Accident, critical illness, and cancer insurance. Cash benefits paid directly to you — not the hospital.</p>
           <a href="get-a-quote.html" class="btn btn-gold btn-sm">Get a Quote →</a>
@@ -340,8 +303,11 @@
         </div>
       </div>
 
-      <!-- Union Panel -->
-      <div class="product-panel" id="tab-union">
+      <!-- Union Section -->
+      <div id="tab-union" style="margin-top:72px;padding-top:56px;border-top:1px solid var(--gray-200);">
+        <div class="section-head reveal" style="text-align:left;margin-bottom:32px;">
+          <span class="label-tag">Union &amp; Veteran</span>
+        </div>
         <div class="product-panel-intro">
           <p>Exclusive portable benefits for members of 45,000+ unions, associations, and veteran service organizations.</p>
           <a href="get-a-quote.html" class="btn btn-gold btn-sm">Get a Quote →</a>
@@ -409,16 +375,6 @@
   </footer>
 
   <script src="script.js"></script>
-  <script>
-    document.querySelectorAll('.product-tab').forEach(function(tab) {
-      tab.addEventListener('click', function() {
-        document.querySelectorAll('.product-tab').forEach(function(t) { t.classList.remove('active'); });
-        document.querySelectorAll('.product-panel').forEach(function(p) { p.classList.remove('active'); });
-        tab.classList.add('active');
-        document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
-      });
-    });
-  </script>
   <script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6a773d3be425d99b061a52fb" data-source="WEB_USER"></script>
 </body>
 </html>
